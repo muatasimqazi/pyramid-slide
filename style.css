@@ -1,0 +1,48 @@
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.heading {
+  background: #b36093;
+  height: 100%;
+  display: table;
+  width: 900px;
+  text-align: center;
+  font: 22px monospace;
+  padding: 10px;
+  color: white;
+}
+
+#controls {
+  background: #d2d1d2;
+  height: 100px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+#controls div {
+  margin: 40px;
+  display: inline;
+}
+
+#container {
+  background: #f1f1f1;
+  width: 800px;
+  margin: auto;
+  border: 2px solid #b36093;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+#value {
+  font-weight: bold;
+}
+#pyramid {
+  direction: rtl;
+  width: 450px;
+  color: #b36093;
+}
+
+#pyramid div {
+  display: inline;
+}
