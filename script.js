@@ -7,20 +7,6 @@ var brick = document.querySelector('.bricks').value;
 var height = document.querySelector('#height').value;
 drawPyramid(height);
 
-container.addEventListener('input', function(e) {
-
-  // the name attribute
-  var name = e.target.getAttribute('name');
-  if (name == "bricks") {
-    brick = e.target.value;
-    drawPyramid(height);
-  } else {
-    height = e.target.value;
-    e.target.nextElementSibling.innerHTML = height;
-    drawPyramid(height);
-  }
-});
-
 function drawPyramid(height) {
   pyramid.innerHTML = '';
   for (var i = 0; i < height; i++) {
@@ -32,3 +18,18 @@ function drawPyramid(height) {
     }
   }
 }
+
+var slide = function(e) {
+  // the name attribute
+  var name = e.target.getAttribute('name');
+  if (name == "bricks") {
+    brick = e.target.value;
+    drawPyramid(height);
+  } else {
+    height = e.target.value;
+    e.target.nextElementSibling.innerHTML = height;
+    drawPyramid(height);
+  }
+};
+
+container.addEventListener('input', slide);
